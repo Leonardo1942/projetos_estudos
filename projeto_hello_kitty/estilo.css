@@ -1,0 +1,264 @@
+/* PÁGINA HOME */
+
+.Menu{
+
+top: 20px;
+position: absolute;
+font-family: sans-serif ;
+font-style: italic;
+font-size: 20px;
+width: 780px;
+}
+
+.Imagens{
+	margin: 50px;
+	position: absolute;
+}
+
+#PrimeiraImagem{
+
+	position: absolute;
+	width: 450px;	
+	top: 150px;
+	margin-left: 100px ;
+	
+}
+
+#SegundaImagem{
+	
+	padding-right: 50px;
+	padding-left: 50px;
+	position: absolute;
+	left: 500px;
+	top: 150px;
+}
+
+#TerceiraImagem{
+
+	position: absolute;
+	left: 900px;
+	top: 120px;
+	padding-left: 0px;
+	margin-right: 100px;
+}
+
+a:link, a:visited{
+	color: black;
+}
+
+a:hover{
+	background: hotpink;
+}
+
+/* FIM PÁGINA HOME */
+
+
+/* PÁGINA "SOBRE" */
+
+#sobreT{
+	position: absolute;
+	left: 360px;	
+	top: 60px;
+}
+
+#sobre{
+	position: absolute;
+	top: 250px;
+}
+
+/* FIM */
+
+/* PÁGINA "Por que?" */
+
+#Porquet{
+	position: absolute;
+	left: 360px;	
+	top: 60px;
+}
+
+#Porque{
+	position: absolute;
+	top: 250px;
+	width: 650px;
+	left: 300px;
+}
+
+/* FIM */
+
+/* PÁGINA "CONTATO" */
+
+#ContatoT{
+	position: absolute;
+	left: 360px;	
+	top: 60px;
+}
+
+#contato{
+	position: absolute;
+	top: 250px;
+	width: 650px;
+	left: 300px;
+}
+
+/* FIM */
+
+body{
+	background: url('Imagens/fundo.webp');
+	text-align: center;
+
+}
+
+p{
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+a{
+	font-family: fantasy;
+	color: black;
+	text-decoration: inherit;
+}
+
+
+/* PÁGINA MYMELODY */
+
+#mymelody {
+	font-family: sans-serif;
+	width: 650px;
+	font-size: 150px;
+	position: absolute;
+	top: 450px;
+}
+
+#mymelodytitulo{
+	position: absolute;
+	left: 360px;	
+	top: 60px;
+}
+
+#mymelodytext {
+	position: absolute;
+	width: 400px;
+	top: 150px;
+	left: 50px;
+}
+
+#mymelodytext2{
+	position: absolute;
+	width: 700px;
+	top: 330px;
+	left: 500px;
+}
+
+#ImagemMM{
+	border-style: solid;
+	margin: 0px;
+	position: absolute;
+	top: 310px;
+	left: 50px;
+}
+
+/* FIM MYMELODY */
+
+
+/* PÁGINA HELLO KITTY */
+
+#hellokitty {
+	font-family: sans-serif;
+	width: 650px;
+	font-size: 150px;
+	position: absolute;
+	top: 450px;
+}
+
+#hellokittytitulo{
+	position: absolute;
+	left: 360px;	
+	top: 60px;
+}
+
+#hellokittytext {
+	position: absolute;
+	width: 400px;
+	top: 150px;
+	left: 50px;
+}
+
+#hellokittytext2{
+	position: absolute;
+	width: 700px;
+	top: 330px;
+	left: 500px;
+}
+
+#ImagemHK{
+	border-style: solid;
+	margin: 0px;
+	position: absolute;
+	top: 310px;
+	left: 50px;
+}
+
+/* FIM PÁGINA HELLO KITTY */
+
+
+
+
+/* PÁGINA KUROMI */
+
+#kuromi {
+	font-family: sans-serif;
+	width: 650px;
+	font-size: 150px;
+	position: absolute;
+	top: 650px;
+}
+
+#kuromititulo{
+	position: absolute;
+	left: 360px;	
+	top: 60px;
+}
+
+#kuromitext {
+	position: absolute;
+	width: 400px;
+	top: 150px;
+	left: 50px;
+}
+
+#kuromitext2{
+	position: absolute;
+	width: 700px;
+	top: 330px;
+	left: 500px;
+}
+
+#ImagemKU{
+	border-style: solid;
+	margin: 0px;
+	position: absolute;
+	top: 310px;
+	left: 50px;
+}
+
+/* FIM PÁGINA KUROMI */
+
+.gifHK{
+	position: absolute;
+	top: 140px;
+	right: 270px;
+}
+
+.gifMM{
+	position: absolute;
+	top: 140px;
+	right: 270px;
+}
+
+.gifKU{
+	position: absolute;
+	top: 140px;
+	right: 270px;
+}
+
