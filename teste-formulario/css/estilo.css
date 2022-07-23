@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../img/download.png);
+}
+
+
+section h2{
+    color: #00bbd8;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section{
+    margin: 20px auto;
+}
+
+section label{
+    color:#00bbd8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section button{
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  background: linear-gradient(360deg, #00bbd8 0.40%, #920e78 90.75%);
+}
+
+nav{
+    background: linear-gradient(360deg, #00bbd8 0.26%, #920e78 80.75%)
+    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(9, 2, 2);
+    text-transform: uppercase;
+}
+
+nav img{
+     border-radius: 100px;
+     width: 85px;
+}
+
+section input{
+    margin: 10px;
+}
+
+#form{
+    background-color: black;
+    padding: 40px;
+    border: 2px solid #920e78 ;
+    border-radius: 50px;
+}
+
+
+.form-control-sm {
+    opacity: 60%;
+}
+
+
+#botoes{
+    text-align: center;
+}
+
+@keyframes anima {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+  
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  
+}
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+ 
+}
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+*/
