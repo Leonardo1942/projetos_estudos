@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+nav{
+    background-color: rgb(128, 225, 210, 0.9);
+    height: 110px;
+}
+
+nav ul li a:hover{
+    color: black;
+    text-transform: uppercase;
+    background-color: rgb(73, 205, 185);
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+#home{
+    margin-top: 140px;
+    background-color: white;
+    
+}
+
+#home2{
+    background-color: rgb(128, 225, 210);
+}
+
+#home h1{
+    padding-top: 25px;
+}
+
+#home2 h2{
+    padding-top: 25px;
+}
+
+#home2 img{
+   width: 530px;
+   height: 400px;
+}
+
+
+#equipamentos{
+    background-color: white;
+    margin-top: 25px;
+}
+
+#equipamentos img{
+    margin: 15px auto;
+    width: 1000px;
+}
+
+footer p a{
+    margin:5px 15px;
+    color: black;
+}
+
+footer p a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(73, 205, 185);
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 1%;
+}
+
+.caixa{
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+#fotos{
+    background-color: rgb(128, 225, 210);
+}
+
+/* animação */
+
+.teste img {
+    position: relative;
+    width: 60px;
+    animation: teste1 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes teste1 {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 500px;
+    }
+    55% {
+        transform: rotate(0deg);
+        left: 500px;
+    }
+    70% {
+        transform: rotate(0deg);
+        left: 500px;
+    }
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}

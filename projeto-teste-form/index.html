@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ce3d6b4815.js" crossorigin="anonymous"></script>
+
+    <!-- Customização CSS-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <!-- Inclusão do jQuery-->
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <!-- Inclusão do Plugin jQuery Validation-->
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script> 
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"></script>
+     
+    
+    <script src="JS/index.js"></script>
+
+  
+
+    <title>DinariPay</title>
+  </head>
+  <body>
+
+    <header> <!-- Inicio Cabeçalho -->
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/leonardo-holanda-16a654138/" class="nav-link">Linkedin</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/Leonardo1942" class="nav-link">GitHub</a>
+              </li>
+            
+        </div>        
+      </nav>
+    </header> <!-- Fim Cabeçalho -->
+
+    
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <section class= "col-md-8 d-flex">
+
+            <form class="form-group col-md-12" id="form">
+
+              <h2 style="text-align: center;" class="lead">FORMULÁRIO DE CADASTRO</h2>
+              
+              <!-- Informações Pessoais-->
+              <div id="informacoesPessoais">
+                <label  for="nome">Nome:</label>
+                <input class="form-control form-control-sm" type="text" id="nome" placeholder="Digite seu nome"  autocomplete="additional-name" required>
+                <hr>
+
+                <label  for="cpf">CPF:</label>
+                <input class="form-control form-control-sm" type="text" id="cpf"  onkeyup="cpfCheck(this)" maxlength="18" onkeydown="javascript:fMasc( this, mCPF );" placeholder="XXX.XXX.XXX-XX"> <span id="cpfResponse" required></span>
+                <hr>
+
+
+                <label for="email">E-mail:</label>
+                <input class="form-control form-control-sm" type="email" id="email" placeholder="Digite seu e-mail"  required>
+                <hr>
+
+                <label for="dataDeNascimento">Data de Nascimento:</label>
+                <input class="form-control form-control-sm" type="date" id="dataDeNascimento" value="" onblur="validardataDeNascimento(this.value);" required >
+                <hr>
+              </div>
+
+              <!-- Gênero -->
+              <div id="generos">
+                <label for="">Gênero:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="generoM" required >
+                  <label class="form-check-label" for="genero">
+                    Masculino
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="generoF" required>
+                  <label class="form-check-label" for="genero">
+                    Feminino
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="generoOutro"  required>
+                  <label class="form-check-label" for="genero">
+                    Outro
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="generoPND" required>
+                  <label class="form-check-label" for="genero">
+                    Prefiro não dizer
+                  </label>
+                </div>
+              </div>
+              <hr>
+
+              <!-- Senhas -->
+              <div id="senhas">
+                <label  for="senha">Senha:</label>
+                <input class="form-control form-control-sm" name="senha" type="password" required size="10" maxlength="10" id="senha" placeholder="Digite sua senha" required>
+
+                <label  for="senha">Confirmação de senha:</label>
+                <input  class="form-control form-control-sm" name="senha1" type="password" required size="10" maxlength="10" id="senha1" placeholder="Confirme sua senha" required onblur="validarSenha('senha','senha1')">
+                <hr>
+              </div>
+              
+              <!-- Botôes -->
+              <div id="botoes">
+               <button onclick="cadastroEnviado().value"  class="btn" type="submit" id="botao">Cadastrar</button>
+               <button class="btn" type="reset" id="limparTudo">Cancelar</button>
+              </div>
+            
+
+
+
+               </form>
+             </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
